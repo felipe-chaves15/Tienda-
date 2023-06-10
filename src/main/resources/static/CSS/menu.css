@@ -36,7 +36,7 @@ body {
     font-weight: bold;
     padding: 0 40px;
     line-height: 80px;
-    color: orange;
+    color: red;
    
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 .nav-menu-link:hover{
-    background-color: darkcyan;
+    background-color: crimson;
     transition: 0.5s;
     
 }
