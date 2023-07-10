@@ -31,3 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
+/src/main/resources/firebase/techshop2-c20d3-firebase-adminsdk-cftha-f0681a110d.json
