@@ -11,14 +11,16 @@
 
 
         <header th:replace="layout/plantilla :: header"></header>
-        
+
         <section th:replace="categoria/Fragmentos :: botonesAgregar" />
         <section th:replace="categoria/Fragmentos :: agregarCategoria" />
         <section th:replace="categoria/Fragmentos :: listadoCategorias" />
-                 
 
-        
-       
+        <p>[[${EmailUsuario}]]</p>
+
+
+
+
         <footer th:replace="layout/plantilla :: footer" />
 
     </body>

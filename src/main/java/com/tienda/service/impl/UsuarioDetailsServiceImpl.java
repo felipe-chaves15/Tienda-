@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service("userDetailsService")
-public class UsuarioDetailsServiceImpl implements UsuarioDetailsService, UserDetailsService {
+public class UsuarioDetailsServiceImpl implements UsuarioDetailsService, UserDetailsService{
 
     @Autowired
     private UsuarioDao usuarioDao;;
@@ -29,7 +29,7 @@ public class UsuarioDetailsServiceImpl implements UsuarioDetailsService, UserDet
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         // Buascar en BD el usuario
-        Usuario usuario = usuario = usuarioDao.findbyUsername(username);
+        Usuario usuario = usuario = usuarioDao.findByUsername(username);
 
         if (usuario == null) {
             throw new UsernameNotFoundException("El usuario" + username + " no existe");
